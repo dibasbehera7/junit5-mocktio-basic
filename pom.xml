@@ -17,6 +17,7 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<junit.jupiter.version>5.8.2</junit.jupiter.version>
 		<mockito.core.version>4.6.1</mockito.core.version>
+		<hamcrest.library.version>2.2</hamcrest.library.version>
 	</properties>
 
 	<dependencies>
@@ -37,6 +38,20 @@
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
 			<version>${mockito.core.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-junit-jupiter</artifactId>
+			<version>${mockito.core.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-library</artifactId>
+			<version>${hamcrest.library.version}</version>
 			<scope>test</scope>
 		</dependency>
 
